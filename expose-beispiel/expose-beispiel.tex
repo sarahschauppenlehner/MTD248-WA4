@@ -1,0 +1,56 @@
+%% File encoding: UTF-8
+%% äöüÄÖÜß  <-- keine deutschen Umlaute hier? UTF-faehigen Editor verwenden!
+
+\documentclass[bachelor,german]{hgbthesis}
+% Zulässige Class Options: 
+%   Typ der Arbeit: diplom, master (default), bachelor, praktikum 
+%   Hauptsprache: german (default), english
+%%------------------------------------------------------------
+
+\RequirePackage[utf8]{inputenc}		% remove when using lualatex oder xelatex!
+
+\graphicspath{{images/}}    % name of directory containing the images
+\logofile{logo}							% name of logo-PDF in images/ (or use \logofile{} for no logo)
+\bibliography{literatur}  	% name of the BibTeX (.bib) file
+
+
+%%%----------------------------------------------------------
+\begin{document}
+%%%----------------------------------------------------------
+
+% Einträge für ALLE Arbeiten: --------------------------------
+\title{Partielle Lösungen zur allgemeinen Problematik}
+\author{Peter A.\ Schlaumeier}
+\studiengang{Medientechnik und -design}
+\studienort{Hagenberg}
+\abgabedatum{2016}{07}{29}	% {YYYY}{MM}{DD}
+
+%%% zusätzlich für eine Bachelorarbeit: ---------------------
+\nummer{S1410238099-A}   % XX...X = Stud-ID, z.B. 0310238045-A  
+                        % (A = 1. Bachelorarbeit)
+\semester{Sommersemester 2016} 
+\gegenstand{Einführung in die Tiefere Problematik 1} 
+\betreuer{Alois B.~Treuer, Päd.\ Phil.} % oder \betreuerin{..}
+
+%\strictlicense  % erzeugt restriktive Lizenzformel
+
+%%%----------------------------------------------------------
+\frontmatter
+\maketitle
+\tableofcontents
+%%%----------------------------------------------------------
+
+\include{kurzfassung}		
+\include{abstract}			
+
+%%%----------------------------------------------------------
+\mainmatter         % Hauptteil (ab hier arab. Seitenzahlen)
+%%%----------------------------------------------------------
+
+\include{ba-thema}
+
+%%%----------------------------------------------------------
+\MakeBibliography
+%%%----------------------------------------------------------
+
+\end{document}
