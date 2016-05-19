@@ -1,9 +1,6 @@
 *.aux
-expose-beispiel/ba-thema.log
 *.bcf
-expose-beispiel/expose-beispiel.log
 *.out
-expose-beispiel/expose-beispiel.run.xml
 *.gz
 *.toc
 *.bbl
