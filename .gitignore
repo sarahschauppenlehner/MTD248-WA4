@@ -6,3 +6,7 @@ expose-beispiel/expose-beispiel.log
 expose-beispiel/expose-beispiel.run.xml
 *.gz
 *.toc
+*.bbl
+*.blg
+*.xml
+*.log
